@@ -1,0 +1,99 @@
+/* Prevent content hiding behind navbar */
+
+body{
+    padding-bottom:80px;
+}
+
+/* Mobile Navigation */
+
+.mnav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:70px;
+    background:#7c857e;
+    z-index:9999;
+    box-shadow:0 -3px 15px rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-top: -10px;
+}
+
+.mnav ul{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+.mnav ul li{
+    list-style:none;
+}
+
+.mnav ul li a{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    font-size:12px;
+    font-weight:500;
+}
+
+.icon{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+}
+
+/* Floating Appointment Button */
+
+.mid-icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:white;
+    color:#0d6efd;
+    border:4px solid #0d6efd;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    position:relative;
+    top:-15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    margin-bottom: -15px;
+}
+
+.mid-icon ion-icon{
+    color:#cb4e4e;
+}
+
+.text{
+    margin-top:3px;
+}
+.text-mid{
+    margin-top: -10px;
+}
+
+.mnav ul li a.active{
+    color:#dc5cd1;
+    font-weight: 500;
+}
+
+/* Hide on Desktop */
+
+@media(min-width:769px){
+
+    .mnav{
+        display:none;
+    }
+
+    body{
+        padding-bottom:0;
+    }
+}
